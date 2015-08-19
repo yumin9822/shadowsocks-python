@@ -7,6 +7,4 @@ RUN pip install shadowsocks
 
 ADD config.json /shadowsocks/config.json
 
-EXPOSE 8399
-
 ENTRYPOINT ["ssserver", "-c", "/shadowsocks/config.json"]
